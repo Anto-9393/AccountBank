@@ -52,10 +52,9 @@ public class AccountService {
         return 0;
     }
 
-    public int checkMoneyById(long id) {
-       Conto accountBank = contoRepository.findById(id).get();
-        int money = accountBank.getSaldo();
-        return money;
+    public int checkMoneyById(long id ) {
+        Conto accountBank = contoRepository.findById(id).get();
+        return accountBank.getSaldo();
     }
 
     public int depositMoney(long id, Movimenti movimenti) throws Exception {
@@ -65,13 +64,6 @@ public class AccountService {
     }
 
     public List<Movimenti> lastFiveOperations(long id) {
-        List operationsList = new ArrayList<>();
-        operationsList.add(movimentiRepository.findLastFiveOperations(id));
-        return operationsList;
-
+        return movimentiRepository.findLastFiveOperations(id);
     }
-
-
-
-
 }
