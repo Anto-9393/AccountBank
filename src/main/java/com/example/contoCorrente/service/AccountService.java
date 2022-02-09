@@ -35,33 +35,33 @@ public class AccountService {
     }
 
     public int triggerMoney(long id, Movimenti movimenti) throws Exception {
-        Conto conto = contoRepository.findById(id).get();
-        int cash = conto.getSaldo();
+        Conto accountBank = contoRepository.findById(id).get();
+        int currentBalance = accountBank.getSaldo();
         int deposit = movimenti.getImporto();
         String type = movimenti.getTipo();
         int newDeposit=0;
         if(type.equals("deposito")) {
-            newDeposit = cash + deposit;
-        } else if(type.equals("prelievo") && cash >= deposit) {
-            newDeposit = cash - deposit;
-        } else {
+            newDeposit = currentBalance + deposit;
+        }else if(type.equals("prelievo") && currentBalance >= deposit) {
+            newDeposit = currentBalance - deposit;
+        }else{
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-        conto.setSaldo((newDeposit));
-        contoRepository.save(conto);
+        accountBank.setSaldo((newDeposit));
+        contoRepository.save(accountBank);
         return 0;
     }
-    // Ritorna il Saldo
+
     public int checkMoneyById(long id) {
-       Conto conto = contoRepository.findById(id).get();
-        int money = conto.getSaldo();
+       Conto accountBank = contoRepository.findById(id).get();
+        int money = accountBank.getSaldo();
         return money;
     }
+
     public int depositMoney(long id, Movimenti movimenti) throws Exception {
         movimentiRepository.save(movimenti);
         triggerMoney(id, movimenti);
         return 0;
-
     }
 
     public List<Movimenti> lastFiveOperations(long id) {

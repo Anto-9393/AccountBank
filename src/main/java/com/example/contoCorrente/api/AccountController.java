@@ -33,7 +33,7 @@ public class AccountController {
     @GetMapping(path="operations/{id}")
     public List lastFiveOperations(@PathVariable ("id") long id) {return accountService.lastFiveOperations(id);}
 
-    @PostMapping(path = "deposit/{id}")
+    @PostMapping(path = "operations/{id}")
     public void depositMoney(@PathVariable ("id") long id, @Valid @NonNull @RequestBody Movimenti movimenti) throws Exception{
        accountService.depositMoney(id,movimenti);
 
