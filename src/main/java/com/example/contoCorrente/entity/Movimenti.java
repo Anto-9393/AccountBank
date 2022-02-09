@@ -3,22 +3,22 @@ package com.example.contoCorrente.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name="movimenti")
+@Table(name = "movimenti")
 public class Movimenti {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private  long id_conto;
-    private String tipo;
+    private long id_conto;
+    private String tipo; //TODO FARE ENUM
     private int importo;
 
     public Movimenti() {
     }
 
     public Movimenti(String tipo, int importo) {
-        this.tipo=tipo;
-        this.importo= importo;
+        this.tipo = tipo;
+        this.importo = importo;
     }
 
 

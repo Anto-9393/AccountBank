@@ -27,6 +27,7 @@ public class AccountService {
     private MovimentiRepository movimentiRepository;
 
     public Optional<Person> getPersonById(long id) throws Exception {
+        return null;
         Optional<Person> person = personRepository.findById(id);
         if(person.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
@@ -52,15 +53,15 @@ public class AccountService {
         return 0;
     }
 
-    public int checkMoneyById(long id ) {
-        Conto accountBank = contoRepository.findById(id).get();
-        return accountBank.getSaldo();
+    public int checkMoneyById(long id) {
+        return contoRepository.findById(id).get().getSaldo();
+
     }
 
-    public int depositMoney(long id, Movimenti movimenti) throws Exception {
+    public void depositMoney(long id, Movimenti movimenti) throws Exception {
         movimentiRepository.save(movimenti);
         triggerMoney(id, movimenti);
-        return 0;
+
     }
 
     public List<Movimenti> lastFiveOperations(long id) {

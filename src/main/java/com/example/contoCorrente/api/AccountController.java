@@ -8,7 +8,6 @@ import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.websocket.server.PathParam;
 import java.util.List;
 
 @RequestMapping("api/v1/bank")
@@ -18,29 +17,28 @@ public class AccountController {
     private final AccountService accountService;
 
     @Autowired
-    public AccountController(AccountService accountService) {this.accountService = accountService;
+    public AccountController(AccountService accountService) {
+        this.accountService = accountService;
     }
 
     @GetMapping(path = "{id}")
-    public Person getPersonById(@PathVariable ("id") long id) throws Exception {
-        return  accountService.getPersonById(id).orElse(null);
+    public Person getPersonById(@PathVariable("id") long id) throws Exception {
+        return accountService.getPersonById(id).orElse(null);
     }
+
     @GetMapping(path = "balance/{id}")
-    public int checkMoneyById(@PathVariable ("id") long id){
+    public int checkMoneyById(@PathVariable("id") long id) {
         return accountService.checkMoneyById(id);
     }
 
-    @GetMapping(path="operations/{id}")
-    public List lastFiveOperations(@PathVariable ("id") long id) {return accountService.lastFiveOperations(id);}
-
-    @PostMapping(path = "operations/{id}")
-    public void depositMoney(@PathVariable ("id") long id, @Valid @NonNull @RequestBody Movimenti movimenti) throws Exception{
-       accountService.depositMoney(id,movimenti);
-
-
-
+    @GetMapping(path = "operations/{id}")
+    public List<Movimenti> lastFiveOperations(@PathVariable("id") long id) {
+        return accountService.lastFiveOperations(id);
     }
 
+    @PostMapping(path = "operations/{id}")
+    public void depositMoney(@PathVariable("id") long id, @Valid @NonNull @RequestBody Movimenti movimenti) throws Exception {
+        accountService.depositMoney(id, movimenti);
+    }
 
-
- }
+}
