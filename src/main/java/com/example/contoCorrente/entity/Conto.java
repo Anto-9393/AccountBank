@@ -12,7 +12,14 @@ public class Conto {
     private  long id_persona;
     private int saldo;
 
+
     public Conto() {
+    }
+
+    public Conto(long id, long id_persona, int saldo) {
+        this.id = id;
+        this.id_persona = id_persona;
+        this.saldo = saldo;
     }
 
     public long getId() {

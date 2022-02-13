@@ -7,6 +7,7 @@ import com.example.contoCorrente.entity.Person;
 import com.example.contoCorrente.repository.PersonRepository;
 import com.example.contoCorrente.repository.ContoRepository;
 import com.example.contoCorrente.repository.MovimentiRepository;
+import com.example.contoCorrente.utils.Type;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,6 @@ public class AccountService {
     private MovimentiRepository movimentiRepository;
 
     public Optional<Person> getPersonById(long id) throws Exception {
-        return null;
         Optional<Person> person = personRepository.findById(id);
         if(person.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
@@ -39,14 +39,14 @@ public class AccountService {
         Conto accountBank = contoRepository.findById(id).get();
         int currentBalance = accountBank.getSaldo();
         int deposit = movimenti.getImporto();
-        String type = movimenti.getTipo();
+        Type type = movimenti.getTipo();
         int newDeposit=0;
-        if(type.equals("deposito")) {
+        if(type.equals(Type.deposito)) {
             newDeposit = currentBalance + deposit;
-        }else if(type.equals("prelievo") && currentBalance >= deposit) {
+        }else if(currentBalance >= deposit) {
             newDeposit = currentBalance - deposit;
         }else{
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
         }
         accountBank.setSaldo((newDeposit));
         contoRepository.save(accountBank);
