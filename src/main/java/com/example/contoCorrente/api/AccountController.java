@@ -1,5 +1,6 @@
 package com.example.contoCorrente.api;
 
+import com.example.contoCorrente.entity.Conto;
 import com.example.contoCorrente.entity.Movimenti;
 import com.example.contoCorrente.entity.Person;
 import com.example.contoCorrente.service.AccountService;

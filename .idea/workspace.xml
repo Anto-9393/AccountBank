@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61bb8ed4-e00f-4334-a235-bd6217b72e93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/utils/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/contoCorrente/api/AccountControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contoCorrente.iml" beforeDir="false" afterPath="$PROJECT_DIR$/contoCorrente.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/entity/Conto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/entity/Conto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/entity/Movimenti.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/entity/Movimenti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/api/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/api/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/entity/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/contoCorrente/service/AccountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/contoCorrente/service/AccountServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/contoCorrente/api/AccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/contoCorrente/api/AccountControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +93,39 @@
       <recent name="com.example.contoCorrente.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountControllerTest.testPersonById">
+  <component name="RunManager" selected="JUnit.AccountControllerTest.testDepositMoney">
+    <configuration name="AccountControllerTest.testDepositMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="contoCorrente" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.contoCorrente.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.contoCorrente.api" />
+      <option name="MAIN_CLASS_NAME" value="com.example.contoCorrente.api.AccountControllerTest" />
+      <option name="METHOD_NAME" value="testDepositMoney" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest.testMoneyById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="contoCorrente" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.contoCorrente.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.contoCorrente.api" />
+      <option name="MAIN_CLASS_NAME" value="com.example.contoCorrente.api.AccountControllerTest" />
+      <option name="METHOD_NAME" value="testMoneyById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccountControllerTest.testPersonById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="contoCorrente" />
       <extension name="coverage">
@@ -150,38 +173,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountServiceTest.depositMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="contoCorrente" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.contoCorrente.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.contoCorrente.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.contoCorrente.service.AccountServiceTest" />
-      <option name="METHOD_NAME" value="depositMoney" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountServiceTest.triggerMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="contoCorrente" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.contoCorrente.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.contoCorrente.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.contoCorrente.service.AccountServiceTest" />
-      <option name="METHOD_NAME" value="triggerMoney" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="schema.sql" type="OdpsQLRunnerConfigurationType" factoryName="MaxCompute SQL">
       <odps_target_file>$PROJECT_DIR$/src/test/resources/schema.sql</odps_target_file>
       <odps_output_dir>C:\Users\anton\AppData\Local\Temp\</odps_output_dir>
@@ -192,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountControllerTest.testDepositMoney" />
+        <item itemvalue="JUnit.AccountControllerTest.testMoneyById" />
         <item itemvalue="JUnit.AccountControllerTest.testPersonById" />
         <item itemvalue="JUnit.AccountServiceTest (1)" />
         <item itemvalue="JUnit.AccountServiceTest.checkMoneyById" />
-        <item itemvalue="JUnit.AccountServiceTest.depositMoney" />
-        <item itemvalue="JUnit.AccountServiceTest.triggerMoney" />
       </list>
     </recent_temporary>
   </component>
@@ -229,5 +220,12 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/ContoCorrente" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="this.mockMvc.defaultRequestBuilder" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
