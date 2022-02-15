@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="61bb8ed4-e00f-4334-a235-bd6217b72e93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/api/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/api/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/contoCorrente/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/contoCorrente/api/AccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/contoCorrente/api/AccountControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/application-test.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +87,7 @@
       <recent name="com.example.contoCorrente.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountControllerTest.testDepositMoney">
+  <component name="RunManager" selected="JUnit.AccountControllerTest.testFiveOperatins">
     <configuration name="AccountControllerTest.testDepositMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="contoCorrente" />
       <extension name="coverage">
@@ -105,6 +99,22 @@
       <option name="PACKAGE_NAME" value="com.example.contoCorrente.api" />
       <option name="MAIN_CLASS_NAME" value="com.example.contoCorrente.api.AccountControllerTest" />
       <option name="METHOD_NAME" value="testDepositMoney" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest.testFiveOperatins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="contoCorrente" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.contoCorrente.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.contoCorrente.api" />
+      <option name="MAIN_CLASS_NAME" value="com.example.contoCorrente.api.AccountControllerTest" />
+      <option name="METHOD_NAME" value="testFiveOperatins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,22 +167,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountServiceTest.checkMoneyById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="contoCorrente" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.contoCorrente.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.contoCorrente.service" />
-      <option name="MAIN_CLASS_NAME" value="com.example.contoCorrente.service.AccountServiceTest" />
-      <option name="METHOD_NAME" value="checkMoneyById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="schema.sql" type="OdpsQLRunnerConfigurationType" factoryName="MaxCompute SQL">
       <odps_target_file>$PROJECT_DIR$/src/test/resources/schema.sql</odps_target_file>
       <odps_output_dir>C:\Users\anton\AppData\Local\Temp\</odps_output_dir>
@@ -183,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountControllerTest.testFiveOperatins" />
         <item itemvalue="JUnit.AccountControllerTest.testDepositMoney" />
         <item itemvalue="JUnit.AccountControllerTest.testMoneyById" />
         <item itemvalue="JUnit.AccountControllerTest.testPersonById" />
         <item itemvalue="JUnit.AccountServiceTest (1)" />
-        <item itemvalue="JUnit.AccountServiceTest.checkMoneyById" />
       </list>
     </recent_temporary>
   </component>
